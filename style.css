@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    /* margin: 0 100px; */
+    width: 100%;
+    height:  100%;
+    background-color: #eff1f3;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainContainer{
+    width: 80%;
+    height:  100%;
+    /* margin: 0px 100px; */
+
+    /* position: relative; */
+}
+
+/* .mainContainerDiv#mainContainer.active{
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+} */
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #eff1f3;
+}
+
+.navTitle {
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.imageDivMain {
+    width: 100%;
+    /* height: 200px; */
+    /* max-width: 50; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+    /* position:absolute ; */
+
+}
+
+.imageDiv {
+    border: 1.5px solid rgb(227, 227, 227);
+    background-color: #ffffff;
+
+    padding: 15px;
+    border-radius: 7px;
+    margin: 15px 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    transition: 0.3s;
+}
+
+.imageDiv:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #d5d4d4;
+}
+
+.modalDiv {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    overflow:hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px #6f6f6f;
+}
+
+.divModalImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
+
+.modalImageDiv{
+    
+    width: 400px;
+    height: 400px;
+    object-fit: scale-down;
+    
+}
+
+.modalDiv > i{
+    position: relative;
+    left: 95%;
+    top: 2%;
+    color: rgb(215, 74, 74);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modalDiv > i:hover{
+    transform: scale(1.4);
+}
+
+.lightDarkColor{
+    position: fixed;
+    left: 0;
+    background-color: #000000;
+    width: 100VW;
+    height: 100%;
+    display: none;
+    opacity: 0.5;
+
+}
